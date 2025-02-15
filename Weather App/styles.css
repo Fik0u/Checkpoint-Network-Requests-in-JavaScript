@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(169, 227, 227);
+}
+
+.carte{
+    margin: auto;
+    margin-top: 10%;
+    box-shadow: 11px 11px 10px 0px #0c4c3a;
+}
+
+.button{
+    display: block !important;
+    margin: auto;
+}
+
+#resDisplay{
+    display: flex;
+    justify-content: space-around;
+}
+
+.error{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10%;
+    border: 10px;
+    background-color: rgba(129, 4, 4, 0.578);
+    border-radius: 20px;
+}
