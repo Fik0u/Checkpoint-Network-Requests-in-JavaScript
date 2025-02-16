@@ -13,10 +13,10 @@
 </head>
 <body>
     <header>
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
-                <img src="assets/logo.png" alt="Logo" width="50" height="50">SkyCast</a>
+                <img src="assets/logo.png" alt="Logo" width="50" height="50"></a>
             </div>
           </nav>
     </header> 
@@ -25,25 +25,32 @@
         <div class="card carte" style="width: 18rem;">
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <input type="text" id="townInput" class="form-control" placeholder="Town">
+                <input type="text" id="townInput" name="text" class="input" placeholder="Town">
               </li>
               <li class="list-group-item">
-                <button type="button" class="btn btn-success button" onClick="weatherSearch()">Search</button>
+                <button onClick="weatherSearch()">Search</button>
               </li>
               <li class="list-group-item d-none" id="resDisplay">
-                <div>
+                <div id="firstDiv">
                     <h2 id="town"></h2>
-                    <p id="temp"></p>
-                    <p id="description"></p>
+                    <h5 id="code"></h5>
                 </div>
-                <img src="" alt="icon" id="weatherIcon">
+                <div id="secondDiv">
+                    <img src="" alt="icon" id="weatherIcon">
+                    <p id="temp"></p>
+                </div>
+                <div id="thirdDiv">
+                    <img src="assets/weather icon.png" alt="wind" style="width: 25px; height: 25px;">
+                    <p id="description"></p>
+                    <img src="assets/wind icon.png" alt="wind" style="width: 25px; height: 25px;">
+                    <p id="wind"></p>
+                </div>
               </li>
             </ul>
-          </div>
+          </div> 
           <div class="error"></div>
     </main>
 
-    <footer></footer>
     <!-- Bootstrap JS  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- My JS  -->

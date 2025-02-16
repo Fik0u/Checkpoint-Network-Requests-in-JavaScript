@@ -22,15 +22,25 @@ async function weatherSearch() {
 function dataDisplay(data) {
     document.getElementById("resDisplay").classList.remove("d-none");
 
+// To get the city's name and the country code
     const Town = data.name;
-    document.getElementById("town").innerHTML = Town;
+    document.getElementById("town").innerHTML = Town +", ";
+    const country = data.sys.country
+    document.getElementById("code").innerHTML = country;
 
+// Temperature
     const Temperature = Math.floor(data.main.temp)
     document.getElementById("temp").innerHTML = Temperature + " ℃";
 
+// Weather description
     const Description = data.weather[0].main
     document.getElementById("description").innerHTML = Description;
 
+// Wind
+    const Wind = data.wind.speed
+    document.getElementById("wind").innerHTML = Wind + " °";
+
+// Weather icon
     const icon = data.weather[0].icon 
     document.getElementById("weatherIcon").src = `https://openweathermap.org/img/wn/${icon}@2x.png`
 }
