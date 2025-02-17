@@ -15,6 +15,7 @@ async function weatherSearch() {
         dataDisplay(data)
     } catch (error) {
         console.log(error);
+        document.querySelector(".error").classList.remove("d-none");
         document.querySelector(".error").innerHTML = error;
     }
 }

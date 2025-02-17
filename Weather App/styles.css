@@ -96,20 +96,25 @@ button {
   font-weight: 400;
 }
 
-/* .error{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: large;
-    font-weight: 700;
-    height: 100px;
-    width: auto;
-    margin-top: 10%;
-    border: 10px;
-    background-color: rgba(13, 93, 57, 0.847);
-    border-radius: 20px;
-    color: white;
-} */
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: 700;
+  height: 100px;
+  width: fit-content;
+  max-width: 80%;
+  margin: 10px auto;
+  margin-top: 10px; 
+  padding: 10px; 
+  border: 2px solid #0d5d39; 
+  background-color: rgba(2, 18, 10, 0.652);
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
 
 
   
